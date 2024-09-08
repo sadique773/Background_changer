@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      <div className='h-screen w-screen relative ...' style={{backgroundColor:color}}>
-        <div className='bg-white absolute inset-x-10 bottom-10 rounded-3xl' >
+      <div className='h-screen w-screen relative' style={{backgroundColor:color}}>
+        <div className='bg-white rounded-3xl  absolute bottom-5 grid grid-cols- gap-4 content-start ...' >
           <button className='m-1 rounded-2xl bg-red-600' onClick={()=>setColor("red")}>Red</button>
           <button className='m-1 rounded-2xl bg-green-600'onClick={()=>setColor("green")}>Green</button>
           <button className='m-1 rounded-2xl bg-blue-600'
