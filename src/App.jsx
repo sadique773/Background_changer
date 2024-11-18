@@ -2,25 +2,40 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [color, setColor] = useState("olive")
+  const [color, setcolor] = useState("olive")
 
   return (
 
-      <div className='w-full h-screen duration-200' style={{backgroundColor:color}}>
-       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
-       <div className="flex flex-wrap justify-center gap-1 shadow-lg bg-white px-3 py-2 rounded-3xl" >
-          <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"red"}} onClick={()=>setColor("red")}>Red</button>
-          <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg0" style={{backgroundColor:"green"}} onClick={()=>setColor("green")}>Green</button>
-          <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"blue"}} onClick={()=>setColor("blue")}>Blue</button>
-          <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg0" style={{backgroundColor:"olive"}} onClick={()=>setColor("olive")}>Olive</button>
-          <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:'gray'}} onClick={()=>setColor("gray")}>Gray</button>
-          <button className="outline-none px-4 py-1 rounded-full shadow-lg00 text-black" style={{backgroundColor:'yellow'}} onClick={()=>setColor("yellow")}>Yellow</button>
-          <button className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor:"pink"}} onClick={()=>setColor("pink")}>Pink</button>
-          <button className="outline-none px-4 py-1 rounded-full text-black shadow-lgxt-black border-black" style={{backgroundColor:"white"}} onClick={()=>setColor("white")}>White</button>
-          <button className="outline-none px-4 py-1 rounded-full text-white shadow-lgxt-white" style={{backgroundColor:'black'}} onClick={()=>setColor("black")}>Black</button>
-        </div>
-       </div>
-      </div>
+    <>
+    <div className='w-full h-screen flex justify-center items-end duration-1000'
+    style={{backgroundColor:color}}>
+    <div className='bg-slate-400 rounded-2xl flex flex-wrap justify-center items-center px-2 w-auto mb-8 gap-1 p-2'>
+      <button className='bg-red-800 px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("red")}>Red</button>
+
+      <button className='bg-green-800 px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all'onClick={()=>setcolor("green")}>Green</button>
+
+      <button className='bg-blue-800 px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("blue")}>Blue</button>
+
+      <button className='bg-olive px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all'onClick={()=>setcolor("olive")}>Olive</button>
+
+      <button className='bg-gray-500 px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("gray")}>Gray</button>
+
+      <button className='bg-yellow-500 px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("yellow")}>Yellow</button>
+
+      <button className='bg-pink-500 px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("pink")}>Pink</button>
+
+      <button className='bg-purple-800 px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("purple")}>Purple</button>
+
+      <button className='bg-lavender text-black px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("lavender")}>Lavender</button>
+
+      <button className='bg-white text-black px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("white")}>White</button>
+
+      <button className='bg-black text-white px-3 rounded-xl font-serif m-1 py-0.5) hover:scale-105 transform transition-all' onClick={()=>setcolor("black")}>Black</button>
+
+    </div>
+    </div>
+
+  </>
   
   )
 }
